@@ -1,0 +1,86 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+button{
+    background-color: red;
+    color: white;
+    border: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+button:hover{
+    background-color: rgb(140, 0, 0);
+}
+
+.container{
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container div{
+    padding: 30px;
+} 
+
+.dado1{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/dado1.jpg);
+    margin: 0 auto;
+}
+
+.dado2{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/dado2.jpg);
+    margin: 0 auto;
+}
+
+.dado3{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/dado3.jpg);
+    margin: 0 auto;
+}
+
+.dado4{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/dado4.jpg);
+    margin: 0 auto;
+}
+
+.dado5{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/dado5.jpg);
+    margin: 0 auto;
+}
+
+.dado6{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/dado6.jpg);
+    margin: 0 auto;
+}
