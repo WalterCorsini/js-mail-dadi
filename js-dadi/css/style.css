@@ -1,3 +1,10 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -27,17 +34,13 @@ button:hover{
     text-align: center;
 }
 
-.container div{
-    padding: 30px;
-} 
-
 .dado1{
     width: 50px;
     height: 50px;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../img/dado1.jpg);
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .dado2{
@@ -46,7 +49,7 @@ button:hover{
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../img/dado2.jpg);
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .dado3{
@@ -55,7 +58,7 @@ button:hover{
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../img/dado3.jpg);
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .dado4{
@@ -64,7 +67,7 @@ button:hover{
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../img/dado4.jpg);
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .dado5{
@@ -73,7 +76,7 @@ button:hover{
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../img/dado5.jpg);
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .dado6{
@@ -82,5 +85,5 @@ button:hover{
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../img/dado6.jpg);
-    margin: 0 auto;
+    margin: 20px auto;
 }
