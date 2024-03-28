@@ -13,8 +13,11 @@ let result = false;
 
 // eventlistener Click button
 sendBtnElem.addEventListener("click", function(){
+    
     // save input mail to variable
     stringMail = document.getElementById("email").value; //string
+
+    result = false;
 
 //LOGIC
 
