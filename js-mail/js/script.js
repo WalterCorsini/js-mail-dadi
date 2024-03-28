@@ -16,7 +16,7 @@ sendBtnElem.addEventListener("click", function(){
     
     // save input mail to variable
     stringMail = document.getElementById("email").value; //string
-
+    document.getElementById("email").value = "";
     result = false;
 
 //LOGIC
@@ -31,9 +31,9 @@ sendBtnElem.addEventListener("click", function(){
 
 // OUTPUT
     if(result === true){
-        document.getElementById("result").innerHTML = "Registrato";
+        document.getElementById("result").innerHTML = `<span class="ok"> Registrato </span>`;
     } else {
-        document.getElementById("result").innerHTML = "Non egistrato";
+        document.getElementById("result").innerHTML = `<span class="alarm"> Non Registrato </span>`;
         
     }
 })
