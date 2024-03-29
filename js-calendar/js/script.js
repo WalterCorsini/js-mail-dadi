@@ -8,7 +8,6 @@ const nameSaint = ["San Mourinho", "San Diego Milito", "San Wesley Sneider", "Sa
 let calendar = "";
 //  contDayName = 4 ,because March starts on Friday
 // let contDayName = 4;
-
 let contDayName = 0;
 let contMonth = 0;
 
@@ -16,21 +15,64 @@ let contMonth = 0;
 // LOGIC
 
 for(let i = 0; i <= monthNumber[contMonth]; i++, contDayName++){
-    if(i === monthNumber[contMonth] && contMonth < 11){
+    if(i === monthNumber[contMonth] && contMonth <= 11){
+        if(contMonth == 0){
+            document.querySelector(".gennaio").innerHTML = calendar; 
+        } else if(contMonth == 1){
+            document.querySelector(".febbraio").innerHTML = calendar; 
+        } else if(contMonth == 2){
+            document.querySelector(".marzo").innerHTML = calendar; 
+        } else if(contMonth == 3){
+            document.querySelector(".aprile").innerHTML = calendar; 
+        } else if(contMonth == 4){
+            document.querySelector(".maggio").innerHTML = calendar; 
+        } else if(contMonth == 5){
+            document.querySelector(".giugno").innerHTML = calendar; 
+        } else if(contMonth == 6){
+            document.querySelector(".luglio").innerHTML = calendar; 
+        } else if(contMonth == 7){
+            document.querySelector(".agosto").innerHTML = calendar; 
+        } else if(contMonth == 8){
+            document.querySelector(".settembre").innerHTML = calendar; 
+        } else if(contMonth == 9){
+            document.querySelector(".ottobre").innerHTML = calendar; 
+        } else if(contMonth == 10){
+            document.querySelector(".novembre").innerHTML = calendar; 
+        } else if(contMonth == 11){
+            document.querySelector(".dicembre").innerHTML = calendar;
+            contMonth = 12;
+        }
         contMonth += 1;
         i = 0;
-    } else if(i === monthNumber[contMonth] && contMonth == 11){
-        console.log("anno finito");
-        contMonth = 12;
+        calendar = "";
     }
     if(contDayName < 6 && contMonth <= 11){
+        console.log(dayName[contDayName]);
+        calendar += `
+            <div class="box-day">
+                <span class="day-text">${dayName[contDayName]}</span>
+                <span class="day-number">${i+1}</span>
+                <span class="month-name">${monthName[contMonth]}</span>
+            </div> `;
+    }else if (contDayName === 6 && contMonth <= 11){
         console.log(dayName[contDayName], i+1, monthName[contMonth]);
-    }else if (contDayName == 6 && contMonth <= 11){
-        console.log(dayName[contDayName], i+1, monthName[contMonth]);
+        calendar += `
+            <div class="box-day text-red">
+                <span class="day-text">${dayName[contDayName]}</span>
+                <span class="day-number">${i+1}</span>
+                <span class="month-name">${monthName[contMonth]}</span>
+            </div> `;
     } else if(contDayName == 7 && contMonth <= 11){
         contDayName = 0;
         console.log(dayName[contDayName], i+1, monthName[contMonth]);
+        calendar += `
+            <div class="box-day">
+                <span class="day-text">${dayName[contDayName]}</span>
+                <span class="day-number">${i+1}</span>
+                <span class="month-name">${monthName[contMonth]}</span>
+            </div> `;
     }
+
 }
 
 
