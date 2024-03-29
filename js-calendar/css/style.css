@@ -1,23 +1,42 @@
+body{
+    background-image: url(../img/sfondo\ inter.avif);
+}
+
 h1{
     text-align: center;
+    font-size: 50px;
+    color: white;
 }
 
 
 .calendar{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     border: 1px solid black;
 }
 
 .box-day{
+    background-color: white;
+    text-align: center;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: calc(100% / 7 - 5px);
     aspect-ratio: 1;
     border: 1px solid black;
+    font-size: 25px;
 }
 span{
     flex-grow: 1;
+}
+
+.text-red{
+    font-weight: 700;
+    color: red;
+}
+
+.namesaint{
+    font-size: 16px;
 }
