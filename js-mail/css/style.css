@@ -16,7 +16,7 @@
 .box{
     padding: 30px;
     text-align: center;
-    width: 400px;
+    width: 600px;
     margin: 30px auto;
     border-radius: 20px;
     background-color: aquamarine;
@@ -29,6 +29,8 @@ input{
     margin: 0 10px;
 }
 
+
+/* button */
 button{
     width: 50px;
     height: 30px;
@@ -43,21 +45,29 @@ button:active{
     color: black ;
 }
 
+
+/* message alert */
+.ok,
+.wrong,
+.empty{
+        font-size: 30px;
+        font-weight: 700;
+        padding: 10px 70px;
+        border-radius: 20px;
+}
+
 .ok{
-    font-size: 30px;
-    font-weight: 700;
-    padding: 10px 100px;
-    border-radius: 20px;
     background-color: green;
     color: rgb(250, 250, 250);
 }
 
-
-.alarm{
-    font-size: 30px;
-    font-weight: 700;
-    padding: 10px 70px;
-    border-radius: 20px;
+.wrong{
     background-color: yellow;
     color: red;
 }
+
+.empty{
+    background-color: red;
+    color: white;
+}
+

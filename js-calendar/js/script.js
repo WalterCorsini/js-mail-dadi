@@ -1,4 +1,4 @@
-
+"use strict";
 // declaration array and variable
 const dayText = ["Lunedi", "Martedi", "Mercoledi",
 "Giovedi", "Venerdi", "Sabato", "Domenica"]
@@ -17,7 +17,6 @@ for(let i = 1; i<=31; i++, d++){
             <span class="daytext">${dayText[d]}</span>
             <span class="daynumber">${i}</span>
             <span class="namesaint">${nameSaint[i]}</span>
-
         </div> `;
     } else if (d == 6){
         console.warn(i, dayText[d]);
@@ -40,4 +39,4 @@ for(let i = 1; i<=31; i++, d++){
 
 }
 // OUTPUT
-document.querySelector(".calendar").innerHTML = calendar;
+document.querySelector(".calendar").innerHTML = calendar
