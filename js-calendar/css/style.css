@@ -1,5 +1,8 @@
 body{
     background-image: url(../img/sfondo\ inter.avif);
+    display: flex;
+    flex-direction: column;
+    
 }
 
 h2{
@@ -11,9 +14,8 @@ h2{
 
 .calendar{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
-    border: 1px solid black;
 }
 
 .box-day{
@@ -26,7 +28,7 @@ h2{
     width: calc(100% / 7 - 5px);
     aspect-ratio: 1;
     border: 1px solid black;
-    font-size: 25px;
+    font-size: 20px;
 }
 span{
     flex-grow: 1;
