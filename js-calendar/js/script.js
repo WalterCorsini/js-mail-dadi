@@ -6,7 +6,6 @@ const dayName = ["Lunedi", "Martedi", "Mercoledi",
 "Giovedi", "Venerdi", "Sabato", "Domenica"]
 const monthName = ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"]
 const monthNumber = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-const nameSaint = ["San Mourinho", "San Diego Milito", "San Wesley Sneider", "San Douglas Maicon", "San Walter Samuel", "San Julio Cesar", "San Javier Zanetti", "San Thiago Motta", "San Esteban Cambiasso", "San Rodrigo Palacio", "San Massimo Moratti", "San Ricardo Quaresma", "San Marko Arnautovic", "San David Suazo", "San Amantino Mancini", "San Lucio", "San Christian Chivu", "San Goran Pandev", "San Samuel Eto'o", "San Rene Khrin", "San Giulio Donati", "Alen Stevanovic", "San Davide Santon", "San McDonald Mariga", "San Paolo Orlandoni", "San Nicolas Burdisso", "San Marco Materazzi", "San Ivan Cordoba", "San Dejan Stankovic", "San Sulley Muntari", "San Patrick Vieira", "San Mario Balotelli"]
 let calendar = "";
 let contDayName = 0;
 let contMonth = 0;
